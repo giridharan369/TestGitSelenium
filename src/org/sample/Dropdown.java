@@ -20,13 +20,13 @@ public class Dropdown {
 		driver.get("https://www.facebook.com/");
 		WebElement dnmonth=driver.findElement(By.id("month"));
     
-	Select s= new Select(dnmonth);
-	s.selectByVisibleText("Jun");
-	List<WebElement>element=s.getOptions();
+	Select sam= new Select(dnmonth);
+	sam.selectByVisibleText("Jun");
+	List<WebElement>element=sam.getOptions();
 	for(int i=0;i<element.size();i++) {
 	WebElement	elements =element.get(i);
-	String name= elements.getText();
-	System.out.println(name);
+	String n= elements.getText();
+	System.out.println(n);
 	}
 
 	
