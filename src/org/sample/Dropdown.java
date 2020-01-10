@@ -25,8 +25,8 @@ public class Dropdown {
 	List<WebElement>element=sam.getOptions();
 	for(int i=0;i<element.size();i++) {
 	WebElement	elements =element.get(i);
-	String name= elements.getText();
-	System.out.println(name);
+	String n= elements.getText();
+	System.out.println(n);
 	}
 
 	
